@@ -60,8 +60,14 @@ a {
     color: #fff;
 }
 
+.phone-button {
+    background: #fcd33d;
+    padding: 12px 14px 10px 17px;
+}
+
 .phone-button a {
     bottom: 1px;
+    color: #000;
 }
 
 .hero-section {
