@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Good Timing";
+    src: url(good_timing_bd.otf);
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Good Timing";
+}
