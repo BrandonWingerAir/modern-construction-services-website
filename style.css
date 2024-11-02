@@ -4,22 +4,20 @@
     font-weight: bold;
 }
 
-html * {
-    position: relative;
-    text-decoration: none;
+h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.landing-section {
-    height: 100vh;
-    color: #fff;
+a {
+    text-decoration: none;
 }
 
-.landing-section img {
-    width: 630px;
-    position: absolute;
-    right: 25px;
-    bottom: -7px;
+/* Landing Section */
+.landing-section {
+    position: relative;
+    overflow-y: hidden;
+    height: 100vh;
+    color: #fff;
 }
 
 .overlay {
@@ -32,9 +30,12 @@ html * {
         linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 85%, rgba(255,255,255,1) 100%),
         url('images/construction-site.jpg');
     background-position: bottom;
+    background-size: cover;
 }
 
+/* Header Section */
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,15 +71,36 @@ a {
     color: #000;
 }
 
-.hero-section {
+/* Hero Section */
+.hero-text {
+    position: relative;
     left: calc(7vw - 3px);
+    top: 120px;
+    width: 80vw;
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 118px;
+    font-size: 105px;
     font-weight: 600;
     line-height: 130px;
     letter-spacing: -4px;
-    top: 120px;
+    max-width: 800px;
+}
+
+.hero-button {
+    height: 95px;
+    width: 130px;
+    background-color: #fcd33d;
+    border-radius: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    position: absolute;
+    width: 61vw;
+    right: 25px;
+    bottom: -0.7vw;
 }
