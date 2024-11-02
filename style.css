@@ -4,6 +4,10 @@
     font-weight: bold;
 }
 
+:root {
+    --mainYellow: #fcd33d;
+}
+
 h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -62,7 +66,7 @@ a {
 }
 
 .phone-button {
-    background: #fcd33d;
+    background: var(--mainYellow);
     padding: 12px 14px 10px 17px;
 }
 
@@ -86,12 +90,13 @@ h2 {
     line-height: 130px;
     letter-spacing: -4px;
     max-width: 800px;
+    margin-bottom: 19px;
 }
 
 .hero-button {
     height: 95px;
     width: 130px;
-    background-color: #fcd33d;
+    background-color: var(--mainYellow);
     border-radius: 550px;
     display: flex;
     justify-content: center;
@@ -103,4 +108,55 @@ h2 {
     width: 61vw;
     right: 25px;
     bottom: -0.7vw;
+}
+
+h3 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 144px;
+}
+
+.animated-section {
+    height: 250px;
+    position: relative;
+}
+
+footer {
+    background-color: #000;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    font-size: 18px;
+    color: #fafafa;
+    font-weight: 500;
+}
+
+footer a {
+    color: #fafafa;
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        display: none;
+    }
+
+    h2 {
+        font-size: 55px;
+        line-height: 66px;
+        margin-bottom: 10px;
+    }
+
+    .hero-button {
+        width: 90px;
+        height: 65px;
+    }
+
+    .hero-image {
+        width: 87vw;
+    }
 }
